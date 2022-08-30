@@ -3,7 +3,7 @@
 import robots
 
 
-class AbstractMelon:
+class Melon:
     """Melon."""
 
     def __init__(self, melon_type):
@@ -32,9 +32,10 @@ class AbstractMelon:
             return f"{self.color} {self.weight:.2f} lbs {self.melon_type}"
 
 
-class Squash(AbstractMelon):
+class Squash(Melon):
     """Winter squash."""
 
+    
     def __init__(melon_type):
         super().__init__(melon_type)
         super().prep()
@@ -44,6 +45,3 @@ class Squash(AbstractMelon):
         """Paints winter squash green."""
         robots.painterbot.paint(self)
         self.color = "Green"
-
-
-    
