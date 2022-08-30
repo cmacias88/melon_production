@@ -35,13 +35,10 @@ class Melon:
 class Squash(Melon):
     """Winter squash."""
 
-    
-    def __init__(melon_type):
+    def __init(self, melon_type):
         super().__init__(melon_type)
-        super().prep()
-        super().__str__()
 
-    def paint(self):
-        """Paints winter squash green."""
+    def prep(self):
+        super().prep()
         robots.painterbot.paint(self)
-        self.color = "Green"
+    
